@@ -115,6 +115,8 @@ class Menu extends CI_Controller
 
         $data['edit'] = $this->db->get_where('user_menu', ['id' => $id])->row_array();
         $data['menu'] = $this->db->get('user_menu')->result_array();
+        $data['user_access'] = $this->db->get('user_access_menu')->result_array();
+        $data['user_role'] = $this->db->get('user_role')->result_array();
 
         $this->form_validation->set_rules('menu', 'Menu', 'required');
 

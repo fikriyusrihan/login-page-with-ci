@@ -12,9 +12,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <form action="<?= base_url('menu/edit/') . $edit['id']; ?>" method="POST">
-                        <div class="mb-3">
+                        <div class="mb-3 form-group">
                             <label for="exampleInputEmail1" class="form-label">Menu Title</label>
-                            <input type="text" class="form-control" id="menu" name="menu" value="<?=$edit['menu']; ?>">
+                            <input type="text" class="form-control" id="menu" name="menu" value="<?= $edit['menu']; ?>">
                         </div>
                         <button type="button" class="btn btn-secondary">
                             <a href="<?= base_url('menu'); ?>" class="text-white text-decoration-none">Cancel</a>
